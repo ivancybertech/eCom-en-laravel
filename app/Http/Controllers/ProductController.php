@@ -22,8 +22,9 @@ class ProductController extends Controller
         return view('detail',['product'=>$data]);
     }
     function search(Request $req){
-        $data = Product::where('name','like','%'.$req->input('query').'%')->get();
-        return view('search',['product'=>$data]);
+         $data = Product::where('name','like','%'.$req->input('query').'%')->get();
+         return view('search',['product'=>$data]);
+        // return $req->input();
     }
     function addToCart(Request $req)
     {
@@ -94,5 +95,5 @@ class ProductController extends Controller
         ->get();
         return view('myorders',['orders'=>$orders]);
     }
-    
+       
 }

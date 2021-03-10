@@ -48,5 +48,9 @@
         margin-bottom: 20px;
         padding-bottom: 20px;
     }
+    .searched-box
+    {
+        width: 500px !important;
+    }
 </style>
 </html>
