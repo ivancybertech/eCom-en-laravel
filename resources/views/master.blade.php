@@ -12,8 +12,8 @@
 </head>
 <body>
     {{View::make('header')}}
-    @yield('content')
-    {{View::make('footer')}}
+        @yield('content')
+    {{View::make('footer')}}    
 </body>
 <style>
     .custom-login{
@@ -41,6 +41,12 @@
     }
     .detail-img{
         height: 200px;
+    }
+    .cart-list-divider
+    {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
 </style>
 </html>
